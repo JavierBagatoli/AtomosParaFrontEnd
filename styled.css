@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Neptune;
+  src: url(.fonts/Neptune.otf);
+}
+
+@font-face {
+  font-family: Anurati;
+  src: url(.fonts/Neptune.otf);
+}
+
+@font-face {
+  font-family: Blanka;
+  src: url(.fonts/Neptune.otf);
+}
+
+@font-face {
+  font-family: Elianto;
+  src: url(.fonts/Neptune.otf);
+}
+
+.Neptune {
+  font-family: Neptune;
+}
+
+.Anurati {
+  font-family: Anurati;
+}
+
+.Blanka {
+  font-family: Blanka;
+}
+
+.Elianto {
+  font-family: Elianto;
+}
+
+body {
+  background-color: rgb(64, 62, 62);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+article {
+  flex-wrap: wrap;
+  width: 400px;
+  background-color: black;
+  color: rgb(170, 224, 233);
+  padding: 20px;
+  margin-bottom: 200px;
+}
+
+/*Rotar*/
+
+.rotarTarjeta {
+  transition: all 1s ease 0s;
+}
+
+.rotarTarjeta:hover {
+  transform: rotateY(360deg);
+}
+
+/*Acercar*/
+.acercarTarjeta {
+  transition: all 1s ease 0s;
+}
+
+.acercarTarjeta:hover {
+  color: white;
+  transform: scale(105%);
+}
+
+/*Carrusel*/
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  gap: 40px;
+  transition: all 1s ease 0s;
+}
+
+.carrusel > .item {
+  min-width: 99%;
+  scroll-snap-align: start;
+  height: 150px;
+}
+
+/*Hovers*/
+.hoverPestañeo {
+  transition: all 1s ease 0s;
+}
+
+.hoverPestañeo:hover {
+  box-shadow: inset -15em 0 0 0 #7d545d, inset 15em 0 0 0 #7d545d;
+}
+
+/*Cae sombra*/
+.caeSombra {
+  transition: all 1s ease 0s;
+}
+
+.caeSombra:hover {
+  box-shadow: 30px 30px 0px #7d545d;
+}
+
+/* Scroll lateral visible*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(68, 164, 164);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 50px;
+}
